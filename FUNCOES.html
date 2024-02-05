@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="exibirMensagem()">Funcao Mensagem</button>
+    <button onmouseover="exibirMensagem()">On Mouse Over</button>
+    <button ondblclick="exibirMensagem()">On DB Click</button>
+
+    <form action="">
+        <input type="text" onchange="campoNome()">
+    </form>
+    
+    <script>
+ 
+        function campoNome() {
+            console.log()
+            // alert('Campo Nome');
+        }
+        // FUNCOES
+        // FUNCAO SEM PARAMETRO
+        function NomeDaFuncao() {
+            // escopo da funcao
+        }
+
+        function exibirMensagem() {
+            alert("Olá, eu sou uma função")
+        }
+
+        // FUNCOES COM PARAMENTROS
+        function somarDoisNumeros(valor1, valor2) {
+            const resultado = valor1 + valor2;
+            console.log("Resultado da Soma: ", resultado);
+        }
+
+        somarDoisNumeros(10, 50);
+        somarDoisNumeros(220, 50);
+
+        // FUNCOES COM PARAMENTROS E RETORNO
+        function dividirDoisNumeros(valor1, valor2) {
+            const resultado = valor1 / valor2;
+            return resultado;
+        }
+
+        const resultadoDivisao = dividirDoisNumeros(20, 5);
+
+        // OUTRAS FORMAS DE DECLARAR FUNCOES
+        const multiplicaDoisNumeros = function (valor1, valor2) {
+            return valor1 * valor2;
+        }
+
+        multiplicaDoisNumeros(2, 5);
+
+        // ARROW FUNCTION
+        const subtrairDoisNumeros =  (valor1, valor2) => {
+            return valor1 - valor2;
+        }
+
+        // ARROW FUNCTION
+        const subtrairDoisNumeros2 =  (valor1, valor2) => valor1 - valor2;
+        
+        
+
+
+
+
+        
+    </script>
+</body>
+</html>
